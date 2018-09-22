@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unimed Maringá</title>
+    <script src="/auth/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/auth/css/bootstrap.min.css" type="text/css">
+    <script src="/auth/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/auth/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/auth/css/auth.css" type="text/css">
+    <link rel="icon" type="image/ico" href="/auth/img/favicon2.ico">
+    <script src="/auth/js/jquery.mask.min.js"></script>
+</head> 
+
+<body style="background-color: #60c597">
+    <section class="container">
+        <section class="login-form">
+            <form role="login" action="/auth" method="post" autocomplete="off">
+                <img src="/auth/img/logo2.png" class="img-responsive" alt="" />
+                <input type="number" id="cpf" name="cpf" placeholder="CPF somente numeros" required class="form-control input-lg cpf" />
+                <input type="number" id="quarto" name="quarto" placeholder="Quarto" required class="form-control input-lg quarto" />
+                <button name="go" type="submit" class="btn btn-lg btn-primary btn-block btn-signin">Autenticar</button>
+                <%if(erro.msg) { %>
+                <div class="alert alert-warning">
+                    <ul>
+                        <li>
+                            <%=erro.msg%>
+                        </li>
+                    </ul>
+                </div>
+                <%}%>
+            </form>
+        </section>
+    </section>
+
+</body>
+
+</html>

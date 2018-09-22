@@ -1,0 +1,20 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "Sistema utilizado para autenticaçao de pacientes para uso de Wifi",
+  "main": "auth.js",
+  "scripts": {
+    "start": "node auth.js",
+    "startMon": "nodemon auth.js"
+  },
+  "author": "Fernando Saltoleto - Werner Lavoratto",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mssql": "^4.1.0",
+    "request": "^2.87.0"
+  }
+}
